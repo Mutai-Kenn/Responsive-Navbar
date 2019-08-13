@@ -1,0 +1,33 @@
+// variables
+$primaryColor: #333;
+$secondaryColor: #444;
+$backgroundColor: #fff;
+
+// Mixins
+@mixin easeOut {
+  transition: all 0.5s ease-in;
+}
+
+// Media queries
+@media (min-width: 768px) {
+  header {
+    .container {
+      .menu-icon {
+        display: none;
+      }
+      nav {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        .menu {
+          display: flex;
+          justify-content: flex-end;
+          justify-content: space-between;
+          align-items: center;
+          li {
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
